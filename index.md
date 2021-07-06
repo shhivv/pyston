@@ -1,6 +1,3 @@
-# Pyston
-
-
 ## Basic implementation
 ```py
 from pyston import PystonClient
