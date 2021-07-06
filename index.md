@@ -1,4 +1,8 @@
-## Basic implementation
+## Pyston
+
+<br>
+
+### Basic implementation
 ```py
 from pyston import PystonClient
 import asyncio
