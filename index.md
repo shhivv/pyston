@@ -1,5 +1,8 @@
 ## Pyston
 
+This is the documentation for Pyston, a library for Python to aid in creating applications that utilise the Piston API.
+
+## Installation
 
 ##  Basic implementation
 The simplest way to run a line of code in Piston
