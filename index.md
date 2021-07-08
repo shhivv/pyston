@@ -24,11 +24,10 @@ loop.run_until_complete(main())
 The PystonClient class is used to create an session to communicate with the API
 
 ### Parametres
-    - api_key : Optional[str]
+- api_key : Optional[str]
 
 ### Methods
 
-    - get_runtimes()
-        Used to fetch the runtimes provided by the Piston API
-        ` client.get_runtimes()`
-    
+- get_runtimes()
+    Used to fetch the runtimes provided by the Piston API
+    ` client.get_runtimes()`
