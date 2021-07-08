@@ -44,5 +44,5 @@ The PystonClient class is used to create an session to communicate with the API
 ### Methods
 
 -  get_runtimes()
-	Used to fetch the runtimes provided by the Piston API
-	`client.get_runtimes()`
+   Used to fetch the runtimes provided by the Piston API
+   `client.get_runtimes()`
