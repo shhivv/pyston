@@ -1,6 +1,6 @@
 from distutils.core import setup
 setup(
-  name = 'pyston',
+  name = 'pystonwrapper',
   packages = ['pyston'],
   version = '1.0.0',
   license='MIT',
