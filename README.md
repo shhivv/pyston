@@ -1,7 +1,6 @@
 # Pyston
 An asynchronous API wrapper for the Piston API
 
-<br>
 
 ## Installation
 ```
