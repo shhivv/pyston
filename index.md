@@ -21,7 +21,7 @@ loop.run_until_complete(main())
 ```
 
 ## PystonClient
-The PystonClient class is used to create an session and is used to communicate with the API
+The PystonClient class is used to create an session to communicate with the API
 
 ### Parametres
     - api_key : Optional[str]
