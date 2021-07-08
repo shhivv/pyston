@@ -19,3 +19,16 @@ async def main():
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
+
+## PystonClient
+The PystonClient class is used to create an session and is used to communicate with the API
+
+### Parametres
+    - api_key : Optional[str]
+
+### Methods
+
+    - get_runtimes()
+        Used to fetch the runtimes provided by the Piston API
+        ` client.get_runtimes()`
+    
