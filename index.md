@@ -30,7 +30,7 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-### Checkout the <a href="https://ffaanngg.github.io/pyston/#executing-from-a-file">file example</a> to see how to use file objects to execute the code
+ Checkout the <a href="https://ffaanngg.github.io/pyston/#executing-from-a-file">file example</a> to see how to use file objects to execute the code
 
 <br>
 
