@@ -100,6 +100,10 @@ The PystonClient class is used to create an session to communicate with the API
 	- Returns a dict
 	- Must be awaited
 
+- **close_session()**
+	- Closes the aiohttp ClientSession	
+	- Must be awaited
+
 
 - **languages**
 	
