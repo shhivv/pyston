@@ -20,5 +20,5 @@ async def main():
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
-### Check out the <a href="https://ffaanngg.github.io/pyston/">Documentation</a> for more information
+### Check out the <a href="https://ffaanngg.github.io/pyston/">documentation</a> for more information
 
