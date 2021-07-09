@@ -8,7 +8,7 @@ This is the documentation for Pyston, a library for Python to aid in creating ap
 Pyston can be installed using the following command
 
 ```py
-pip install pystonwrapper
+pip install aiopyston
 ```
 
 ## Basic implementation
