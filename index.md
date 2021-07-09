@@ -19,10 +19,10 @@ The simplest way to run a line of code in Piston
 from pyston import PystonClient
 import asyncio
 
-async  def  main():
+async def main():
 
-	client =  PystonClient()
-	output =  await client.execute("python","print('Hello World')")
+	client = PystonClient()
+	output = await client.execute("python","print('Hello World')")
 	print(output)
 	#Hello World
 
@@ -68,3 +68,83 @@ The PystonClient class is used to create an session to communicate with the API
 		- `run_memory_limit: Optional[int]`
 
 	- Returns a Output object
+
+- **get_aliases()**
+	- Used to execute code through the Piston API
+	- Parameters
+		- `language : str`
+
+	- Returns a dict
+
+- **get_latest_version()**
+	- Used to execute code through the Piston API
+	- Parameters
+		- `language : str`
+		
+	- Returns a int
+
+- **get_language_info()**
+	- Used to execute code through the Piston API
+	- Parameters
+		- `language : str`
+		
+	- Returns a int
+
+- **languages**
+	
+	- Must be awaited
+	- Property method
+	- Used to execute code through the Piston API
+	- Returns a list
+
+	
+- **endpoints**
+	
+	- Property method
+	- Used to execute code through the Piston API
+	- Returns a tuple
+
+- **base_url**
+	
+	- Property method
+	- Used to execute code through the Piston API
+	- Returns a str
+
+
+## Output
+
+An output oject is returned when a code is exectued
+
+- Attributes
+	- language
+	- version
+	- code
+	- signal
+	- output
+	- stdout
+	- stdrr
+	
+- Property methods
+
+ 	- success
+		- Returns a bool
+
+	- raw_json
+		- Returns raw json output
+
+
+## Executing from a file
+```py
+from pyston import PystonClient
+import asyncio
+
+async def main():
+	with open("test.py") as f:
+		client = PystonClient()
+		output = await client.execute("python",f)
+		print(output)
+		#Test code
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
