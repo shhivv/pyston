@@ -1,6 +1,6 @@
 ## Pyston
 
-This is the documentation for Pyston, a library for Python to aid in creating applications that utilise the Piston API.
+This is the documentation for Pyston, a library for Python to aid in creating applications that utilise the <a href="https://github.com/engineer-man/piston">Piston API</a>.
 
  
 ## Installation
@@ -70,7 +70,7 @@ The PystonClient class is used to create an session to communicate with the API
 		- `compile_memory_limit: Optional[int] = -1`
 		- `run_memory_limit: Optional[int] = -1`
 
-	- Returns a Output object
+	- Returns a <a href="https://ffaanngg.github.io/pyston/#output">Output</a> object
 	- Must be awaited
 
 
