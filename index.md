@@ -45,8 +45,8 @@ The PystonClient class is used to create an session to communicate with the API
 
 -  **get_runtimes()**
 	- Used to fetch the runtimes provided by the Piston API
-	- Parametre
-		- `formatted : Optional[bool]`
+	- Parametres
+		- `formatted : Optional[bool] = True`
 	- Returns a str or dict
 
 
@@ -70,50 +70,51 @@ The PystonClient class is used to create an session to communicate with the API
 	- Returns a Output object
 
 - **get_aliases()**
-	- Used to execute code through the Piston API
+	- Used to fetch the runtimes supported by the Piston API
 	- Parameters
 		- `language : str`
 
 	- Returns a dict
 
 - **get_latest_version()**
-	- Used to execute code through the Piston API
+	- Used to fetch the latest version of a language supported by the Piston API
 	- Parameters
 		- `language : str`
 		
 	- Returns a int
 
 - **get_language_info()**
-	- Used to execute code through the Piston API
+	- Used to fetch the latest version and the aliases of a languages supported by the Piston API
 	- Parameters
 		- `language : str`
 		
-	- Returns a int
+	- Returns a dict
 
 - **languages**
 	
-	- Must be awaited
 	- Property method
-	- Used to execute code through the Piston API
+	- Returns the languages supported by the Piston API
 	- Returns a list
+	- Must be awaited
+
 
 	
 - **endpoints**
 	
 	- Property method
-	- Used to execute code through the Piston API
+	- Returns the endpoints supported by the Piston API
 	- Returns a tuple
 
 - **base_url**
 	
 	- Property method
-	- Used to execute code through the Piston API
+	- Returns the base url of the API
 	- Returns a str
 
 
 ## Output
 
-An output oject is returned when a code is exectued
+An output object is returned when a code is exectued
 
 - Attributes
 	- language
@@ -125,13 +126,11 @@ An output oject is returned when a code is exectued
 	- stdrr
 	
 - Property methods
-
- 	- success
-		- Returns a bool
-
+	- success
+		- Returns True if the code ran successfully else returns False
 	- raw_json
-		- Returns raw json output
-
+		- Returns the raw json response provided by the API request
+	
 
 ## Executing from a file
 ```py
