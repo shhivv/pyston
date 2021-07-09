@@ -50,6 +50,7 @@ The PystonClient class is used to create an session to communicate with the API
 	- Parametres
 		- `formatted : Optional[bool] = True`
 	- Returns a str or dict
+	- Must be awaited
 
 
 <br>
@@ -70,6 +71,8 @@ The PystonClient class is used to create an session to communicate with the API
 		- `run_memory_limit: Optional[int] = -1`
 
 	- Returns a Output object
+	- Must be awaited
+
 
 - **get_aliases()**
 	- Used to fetch the aliases of the languages supported by the Piston API
@@ -77,6 +80,8 @@ The PystonClient class is used to create an session to communicate with the API
 		- `language : str`
 
 	- Returns a dict
+	- Must be awaited
+
 
 - **get_latest_version()**
 	- Used to fetch the latest version of a language supported by the Piston API
@@ -84,6 +89,8 @@ The PystonClient class is used to create an session to communicate with the API
 		- `language : str`
 		
 	- Returns a int
+	- Must be awaited
+
 
 - **get_language_info()**
 	- Used to fetch the latest version and the aliases of a languages supported by the Piston API
@@ -91,6 +98,8 @@ The PystonClient class is used to create an session to communicate with the API
 		- `language : str`
 		
 	- Returns a dict
+	- Must be awaited
+
 
 - **languages**
 	
@@ -98,6 +107,7 @@ The PystonClient class is used to create an session to communicate with the API
 	- Returns the languages supported by the Piston API
 	- Returns a list
 	- Must be awaited
+	
 
 
 	
