@@ -70,7 +70,7 @@ The PystonClient class is used to create an session to communicate with the API
 	- Returns a Output object
 
 - **get_aliases()**
-	- Used to fetch the runtimes supported by the Piston API
+	- Used to fetch the aliases of the languages supported by the Piston API
 	- Parameters
 		- `language : str`
 
