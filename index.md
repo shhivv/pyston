@@ -1,4 +1,3 @@
-## Pyston
 
 This is the documentation for Pyston, a library for Python to aid in creating applications that utilise the <a href="https://github.com/engineer-man/piston">Piston API</a>.
 
