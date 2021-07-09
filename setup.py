@@ -1,13 +1,13 @@
 from distutils.core import setup
 setup(
-  name = 'pystonwrapper',
+  name = 'aiopyston',
   packages = ['pyston'],
   version = '1.0.0',
   license='MIT',
   description = 'An asynchronous API wrapper for the Piston API',
   author = 'Fang',
   url = 'https://github.com/ffaanngg/pyston',
-  download_url = 'https://github.com/ffaanngg/pyston/archive/refs/tags/1.0.0.tar.gz',
+  download_url = 'https://github.com/ffaanngg/pyston/archive/refs/tags/v1.0.0.tar.gz',
   keywords = ['Pyston', 'Piston API', 'API wrapper'],
   install_requires=[
           'aiohttp',
