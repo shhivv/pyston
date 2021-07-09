@@ -1,5 +1,5 @@
 # Pyston
-An asynchronous API wrapper for the Piston API
+An asynchronous API wrapper for the <a href="https://github.com/engineer-man/piston">Piston API</a>.
 
 
 ## Installation
