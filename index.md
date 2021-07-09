@@ -30,7 +30,9 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-  
+### Checkout the <a href="https://ffaanngg.github.io/pyston/#executing-from-a-file">file example</a> to see how to use file objects to execute the code
+
+<br>
 
 ## PystonClient
 
@@ -58,14 +60,14 @@ The PystonClient class is used to create an session to communicate with the API
 	- Parameters
 		- `language : str`
 		- `code : str`
-		- `version : Optional[str]`
+		- `version : Optional[str] = Latest version`
 		- `file_name: Optional[str]`
 		- `stdin: Optional[str]`
 		- `args: Optional[list]`
-		- `compile_timeout: Optional[int]`
-		- `run_timeout: Optional[int]`
-		- `compile_memory_limit: Optional[int]`
-		- `run_memory_limit: Optional[int]`
+		- `compile_timeout: Optional[int] = 10000`
+		- `run_timeout: Optional[int] = 3000`
+		- `compile_memory_limit: Optional[int] = -1`
+		- `run_memory_limit: Optional[int] = -1`
 
 	- Returns a Output object
 
