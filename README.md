@@ -4,7 +4,7 @@ An asynchronous API wrapper for the Piston API
 
 ## Installation
 ```
-pip install pystonwrapper
+pip install aiopyston
 ```
 
 ## Basic implementation
