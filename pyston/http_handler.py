@@ -6,8 +6,8 @@ from .exceptions import *
 from typing import Optional
 
 class HTTP:
-    def __init__(self, apikey: str):
-        self.BASE_URL = "https://emkc.org/api/v2/piston/"        
+    def __init__(self,base_url : str,apikey: str):
+        self.BASE_URL = base_url        
         self._headers = {}
         if apikey is not None:
             self._headers["Authorization"] = apikey

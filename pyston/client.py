@@ -9,10 +9,12 @@ class PystonClient:
     """Pyston client class"""
     def __init__(
         self,
-        api_key: Optional[str] = None
+        api_key: Optional[str] = None,
+        base_url: Optional[str] = "https://emkc.org/api/v2/piston/",
     ):
 
-        self._http_session = http_handler.HTTP(api_key)    
+        self.base_url = base_url
+        self._http_session = http_handler.HTTP(self.base_url,api_key)    
     
     async def close_session(self):
         await self._http_session.close()
@@ -41,7 +43,6 @@ class PystonClient:
 
         payload = {
             "language": language,
-            "version": version,
             "stdin": stdin,
             "args": args,
             "compile_timeout": compile_timeout,
@@ -111,6 +112,3 @@ class PystonClient:
     def endpoints(self):
         return ("runtimes", "execute")
     
-    @property
-    def base_url(self):
-        return "https://emkc.org/api/v2/piston/"
