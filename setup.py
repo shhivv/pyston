@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'aiopyston',
   packages = ['pyston'],
-  version = '1.0.0',
+  version = '1.1.0',
   license='MIT',
   description = 'An asynchronous API wrapper for the Piston API',
   author = 'Fang',
