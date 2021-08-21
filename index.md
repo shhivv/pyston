@@ -41,6 +41,7 @@ The PystonClient class is used to create an session to communicate with the API
 ### Initialization Parametres
 
 - `api_key : Optional[str]`
+- `base_url : Optional[str] = "https://emkc.org/api/v2/piston/"`
 
 ### Methods
 
