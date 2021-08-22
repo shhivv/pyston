@@ -3,7 +3,7 @@ class Output:
     def __init__(self, json_response: dict):
         self._json_response = json_response
         self.langauge = json_response["language"]
-        self.version = json_response["language"]
+        self.version = json_response["version"]
         self.code = json_response["run"]["code"]
         self.signal = json_response["run"]["signal"]
         self.output = json_response["run"]["output"]
