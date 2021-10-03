@@ -11,13 +11,9 @@ class UnexpectedError(Exception):
     pass
 
 
-class RuntimeNotFound(Exception):
+class ExecutionError(Exception):
     pass
 
 
 class InvalidLanguage(Exception):
-    pass
-
-
-class InvalidArgumentType(Exception):
     pass
