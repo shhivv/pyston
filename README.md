@@ -14,7 +14,8 @@ import asyncio
 
 async def main():
     client = PystonClient()
-    output = await client.execute("python",[
+    output = await client.execute("python",
+    [
         File("print('Hello world')")
     ])
     print(output)
