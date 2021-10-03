@@ -5,4 +5,4 @@ pyston\__init__.py
 pyston\client.py
 pyston\exceptions.py
 pyston\http_handler.py
-pyston\response.py
+pyston\models.py
