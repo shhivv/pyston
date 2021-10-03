@@ -9,12 +9,14 @@ pip install aiopyston
 
 ## Basic implementation
 ```py
-from pyston import PystonClient
+from pyston import PystonClient,File
 import asyncio
 
 async def main():
     client = PystonClient()
-    output = await client.execute("python","print('Hello World')")
+    output = await client.execute("python",[
+        File("print('Hello world')")
+    ])
     print(output)
 
 loop = asyncio.get_event_loop()
