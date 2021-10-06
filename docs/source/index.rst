@@ -17,7 +17,7 @@ Features
 
 Installation
 -------------
-**Downloading from PyPi (Recommended)**
+**Installing from PyPi (recommended)**
 
 .. tab-set::
    
@@ -34,7 +34,7 @@ Installation
          $ py -3 -m pip install aiopyston
 
 
-**Downloading from source**
+**Installing from source**
 
 .. tab-set::
    
@@ -69,9 +69,10 @@ Installation
    loop = asyncio.get_event_loop()
    loop.run_until_complete(main())
 
+**Contents**
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    reference
    Examples
