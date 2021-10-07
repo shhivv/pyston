@@ -20,7 +20,6 @@
 project = 'Pyston'
 copyright = '2021, fang'
 author = 'fang'
-
 # The full version, including alpha/beta/rc tags
 release = '1.2.1'
 
