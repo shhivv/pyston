@@ -75,5 +75,5 @@ Installation
    :maxdepth: 2
 
    reference
-   Examples
+   examples
    
