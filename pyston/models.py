@@ -1,21 +1,24 @@
 from dataclasses import dataclass
 from typing import Any
 
+
 @dataclass
 class RunStage:
-    stdout : str
-    stdrr : str
-    output : str
-    code : int
-    signal : Any
+    stdout: str
+    stdrr: str
+    output: str
+    code: int
+    signal: Any
+
 
 @dataclass
 class CompileStage:
-    stdout : str
-    stdrr : str
-    output : str
-    code : int
-    signal : Any
+    stdout: str
+    stdrr: str
+    output: str
+    code: int
+    signal: Any
+
 
 class Output:
     def __init__(self, json_response: dict):
@@ -34,8 +37,8 @@ class Output:
                 stdrr=runstage.get("stdrr"),
                 output=runstage.get("output"),
                 code=runstage.get("code"),
-                signal=runstage.get("signal")
-        )
+                signal=runstage.get("signal"),
+            )
 
         compilestage = json_response.get("compile")
         if compilestage:
@@ -44,8 +47,8 @@ class Output:
                 stdrr=compilestage.get("stdrr"),
                 output=compilestage.get("output"),
                 code=compilestage.get("code"),
-                signal=compilestage.get("signal")
-        )
+                signal=compilestage.get("signal"),
+            )
 
     def __repr__(self):
         return f"{self.langauge} {self.version} {self.run_stage.output}"
@@ -58,17 +61,8 @@ class Output:
         return bool(self.run_stage.stdout)
 
 
-
 class Runtime:
-
-    def __init__(
-        self,
-        *,
-        language,
-        aliases,
-        version,
-        runtime
-    ):
+    def __init__(self, *, language, aliases, version, runtime):
         self.language = language
         self.aliases = aliases
         self.version = version
@@ -76,6 +70,6 @@ class Runtime:
 
     def __str__(self) -> str:
         return self.runtime or self.language
-    
+
     def __repr__(self) -> str:
-        return  f"{self.language}-{self.version}"
+        return f"{self.language}-{self.version}"

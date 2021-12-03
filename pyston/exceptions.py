@@ -1,4 +1,3 @@
-
 class TooManyRequests(Exception):
     pass
 
