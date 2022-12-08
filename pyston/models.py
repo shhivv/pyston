@@ -5,7 +5,7 @@ from typing import Any
 @dataclass
 class RunStage:
     stdout: str
-    stdrr: str
+    stderr: str
     output: str
     code: int
     signal: Any
@@ -14,7 +14,7 @@ class RunStage:
 @dataclass
 class CompileStage:
     stdout: str
-    stdrr: str
+    stderr: str
     output: str
     code: int
     signal: Any
@@ -34,7 +34,7 @@ class Output:
         if runstage:
             self.run_stage = RunStage(
                 stdout=runstage.get("stdout"),
-                stdrr=runstage.get("stdrr"),
+                stderr=runstage.get("stderr"),
                 output=runstage.get("output"),
                 code=runstage.get("code"),
                 signal=runstage.get("signal"),
@@ -44,7 +44,7 @@ class Output:
         if compilestage:
             self.compile_stage = CompileStage(
                 stdout=compilestage.get("stdout"),
-                stdrr=compilestage.get("stdrr"),
+                stderr=compilestage.get("stderr"),
                 output=compilestage.get("output"),
                 code=compilestage.get("code"),
                 signal=compilestage.get("signal"),
