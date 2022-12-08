@@ -29,12 +29,12 @@ class PystonClient:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        base_url: Optional[str] = "https://emkc.org/api/v2/piston/",
+        base_url: Optional[str] = None,
     ):
 
-        self.base_url = base_url
+        self.base_url = base_url or "https://emkc.org/api/v2/piston/"
         self._http_session = http_handler.HTTP(self.base_url, api_key)
-        self._runtimes = None  # Holds the runtimes cache
+        self._runtimes: Optional[list[Runtime]] = None  # Holds the runtimes cache
 
     async def close_session(self) -> None:
         await self._http_session.close()

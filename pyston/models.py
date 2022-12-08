@@ -58,6 +58,8 @@ class Output:
 
     @property
     def success(self) -> bool:
+        if not self.run_stage:
+            return False
         return bool(self.run_stage.stdout)
 
 

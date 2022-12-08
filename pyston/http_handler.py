@@ -11,7 +11,7 @@ class HTTP:
     """
     The HTTP Client class for handling all requests towards the Piston API.
     """
-    def __init__(self, base_url: str, apikey: str):
+    def __init__(self, base_url: str, apikey: Optional[str]):
         self.BASE_URL = base_url
         self._headers = {}
         if apikey:
@@ -32,7 +32,7 @@ class HTTP:
             headers=self._headers, loop=self._loop, connector=connector
         )
 
-    async def _request(self, method: str, endpoint: str, data: str):
+    async def _request(self, method: str, endpoint: str, data: str | None):
         if data is None:
             async with self._session.request(
                 method, self.BASE_URL + endpoint

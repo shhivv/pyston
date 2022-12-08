@@ -10,6 +10,7 @@ setup(
     url="https://github.com/ffaanngg/pyston",
     download_url="https://github.com/ffaanngg/pyston/archive/refs/tags/v1.2.1.tar.gz",
     keywords=["Pyston", "Piston API", "API wrapper"],
+    package_data={"pyston": ["py.typed"]},
     install_requires=[
         "aiohttp",
     ],
