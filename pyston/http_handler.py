@@ -17,7 +17,7 @@ class HTTP:
         if apikey:
             self._headers["Authorization"] = apikey
         self._headers["User-Agent"] = (
-            f"Pyston https://github.com/ffaanngg/pyston {__version__} "
+            f"Pyston https://github.com/shhivv/pyston {__version__} "
             f"{sys.version_info} {aiohttp.__version__}"
         )
 
